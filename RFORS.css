@@ -11,6 +11,14 @@
     --lightTwo: #d4d4d4;
 }
 
+main
+{
+    background-image: url(images/blob-scene-haikei.svg);
+    background-origin: border-box;
+    background-size: cover;
+
+}
+
 @media screen and (max-width: 860px)
 {
     .right-area
@@ -37,6 +45,7 @@
 body
 {
     font-family: "Poppins", sans-serif;
+    
 }
 
 img
@@ -107,7 +116,6 @@ header .container
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
-    background-color: var(--backgroundColor);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
