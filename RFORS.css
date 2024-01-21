@@ -13,9 +13,10 @@
 
 main
 {
-    background-image: url(images/blob-scene-haikei.svg);
+    background-image: url(images/layered-waves-haikei.svg);
     background-origin: border-box;
     background-size: cover;
+    background-blend-mode:multiply;
 
 }
 
@@ -51,6 +52,7 @@ body
 img
 {
     width: 100%;
+    border-radius: 30px;
 }
 
 a
@@ -214,4 +216,33 @@ header .container
 {
     text-align: center;
     color: var(--darkOne);
+}
+
+.footer-area a, .footer-area a:visited
+{
+    text-decoration: none;
+    color: var(--darkOne);
+}
+
+.input-box input
+{
+    height: 50px;
+    border-radius: 16px;
+    font-size: large;
+    border-color: #485039;
+    border-style: solid;
+}
+
+.input-box span
+{
+    position: absolute;
+    font-size: large;
+    left: 107px;
+    top: 371px;
+    transition: 0.3s;
+}
+
+.input-box:focus + span
+{
+    transform: translateX(200px);
 }

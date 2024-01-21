@@ -49,8 +49,31 @@
                 <h1>Launching Soon.</h1>
               </div>
               <p class="text">
-                We're launching soon, contact us for more info.
+                We're launching soon, sign up with your email for more info.
               </p>
+              <div class="input-box">
+                <input type="email" id="email-input" required="required" />
+                <a href="javascript:sendEmail()" class="btn">Sign Up</a>
+                <script>
+                  function sendEmail() {
+                    const params = {
+                      to_email: document.getElementById("email-input").value,
+                    };
+                    const serviceID = "service_c6688w6";
+                    const templateID = "template_3hg8c6g";
+
+                    emailjs
+                      .send(serviceID, templateID, params)
+                      .then((clearInput) => {
+                        document.getElementById("email-input").value = "";
+                        alert("Message Sent Successfully!");
+                      })
+                      .catch((err) => {
+                        alert("Error. Message was not sent.");
+                      });
+                  }
+                </script>
+              </div>
             </div>
             <div class="right-area">
               <img
