@@ -14,25 +14,17 @@
 main
 {
     background-image: url(images/layered-waves-haikei.svg);
-    background-origin: border-box;
-    background-size: cover;
+    background-origin:border-box;
+    background-size:cover;
     background-blend-mode:multiply;
 
 }
 
 @media screen and (max-width: 860px)
 {
-    .right-area
-    {
-        display: none;
-    }
-
     .main-body .container
     {
-        display: flexbox;
-        align-items: center;
-        justify-content: space-around;
-    
+        display: none;
     }
 }
 
@@ -240,9 +232,4 @@ header .container
     left: 107px;
     top: 371px;
     transition: 0.3s;
-}
-
-.input-box:focus + span
-{
-    transform: translateX(200px);
 }
