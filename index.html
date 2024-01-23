@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roommates For Success | Home</title>
-    <script src="index.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
@@ -14,99 +19,59 @@
         emailjs.init("VHgMHqngmi5zuwm3g");
       })();
     </script>
-    <script
-      src="https://kit.fontawesome.com/0a7207fefa.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="RFORS.css" />
   </head>
   <body>
-    <main>
-      <div class="big-wrapper">
-        <header>
-          <div class="container">
-            <div class="logo">
-              <img src="images/Roommates Logo.png" alt="Logo" />
-              <h3>Roommates For Success</h3>
-            </div>
-            <div class="links">
-              <ul>
-                <li><a href="RFORS.html">Home</a></li>
-                <li>
-                  <a href="https://www.facebook.com/RoommatesForSuccess/"
-                    ><i class="fa-brands fa-facebook"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </header>
-        <div class="main-body">
-          <div class="container">
-            <div class="left-area">
-              <div class="big-title">
-                <h1>Proper Housing Starts Here.</h1>
-                <h1>Launching Soon.</h1>
-              </div>
-              <p class="text">
-                We're launching soon, sign up with your email for more info.
-              </p>
-              <div class="input-box">
-                <input type="email" id="email-input" required="required" />
-                <a href="javascript:sendEmail()" class="btn">Sign Up</a>
-                <script>
-                  function sendEmail() {
-                    const params = {
-                      to_email: document.getElementById("email-input").value,
-                    };
-                    const serviceID = "service_c6688w6";
-                    const templateID = "template_3hg8c6g";
-
-                    emailjs
-                      .send(serviceID, templateID, params)
-                      .then((clearInput) => {
-                        document.getElementById("email-input").value = "";
-                        alert("Message Sent Successfully!");
-                      })
-                      .catch((err) => {
-                        alert("Error. Message was not sent.");
-                      });
-                  }
-                </script>
-              </div>
-            </div>
-            <div class="right-area">
-              <img
-                src="images/roommates flyer.jpg"
-                alt="mockup image"
-                class="mockup"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="footer-area">
-          <div class="container">
-            <div class="left-area">
-              <h2>Location</h2>
-              <p>
-                <a href="https://maps.app.goo.gl/Y3g7kgHgTuxfwFez9"
-                  >333 University Ave Suite 200<br />
-                  Sacramento, CA 95825</a
-                >
-              </p>
-            </div>
-            <div class="right-area">
-              <h2>Info</h2>
-              <p>
-                <a href="mailto:info@roommatesforsuccess.com"
-                  >info@roommatesforsuccess.com</a
-                ><br />
-                <a href="callto:+19167755735">(916)-775-5735</a>
-              </p>
-            </div>
-          </div>
+    <nav>
+      <div class="nav-logo"><a href="#">Roommates For Success</a></div>
+      <ul class="nav-links" id="nav-id">
+        <li class="link"><a href="#home">Home</a></li>
+        <li class="link"><a href="#contact">Contact</a></li>
+        <li class="link"><a href="#about">About</a></li>
+        <li class="link"><a href="#subscribe">Subscribe</a></li>
+      </ul>
+      <div class="nav-menu-btn" id="menu-btn">
+        <span><i class="ri-menu-3-line"></i></span>
+      </div>
+    </nav>
+    <header class="section-container header-container" id="home">
+      <div class="header-content">
+        <h1>Proper Housing Starts Here<span>.</span></h1>
+        <div class="header-content-details">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            ipsum ratione atque ex eum quos totam quibusdam suscipit amet
+            voluptatibus quasi impedit rerum, mollitia sint laudantium nulla
+            molestias, temporibus provident quia rem dolore quo, repellat
+            reprehenderit sapiente? Mollitia suscipit dolores molestiae maiores
+            possimus. Harum, at.
+          </p>
+          <button class="btn">Learn More</button>
         </div>
       </div>
-    </main>
+      <div class="header-image">
+        <img src="images/header-1.jpg" alt="header" />
+        <img src="images/header-2.jpg" alt="header" />
+      </div>
+    </header>
+    <section class="section-container about-container" id="about">
+      <div class="about-header">
+        <div class="about-image">
+          <img src="images/about.jpg" alt="about" />
+        </div>
+        <div class="about-content">
+          <p class="section-subheader">About Us</p>
+          <h2 class="section-header">Design & Develop a Better Solution.</h2>
+          <p class="paragraph">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
+            consequatur distinctio nemo maiores vitae quidem cum ducimus,
+            corporis nihil dolorem quibusdam, nostrum, ex velit. Temporibus et,
+            consectetur voluptates facilis est eaque minima possimus enim sit.
+            Dolorem voluptatum alias voluptatem aspernatur possimus, aut
+            delectus velit ratione?
+          </p>
+          <button class="btn">Learn More</button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
