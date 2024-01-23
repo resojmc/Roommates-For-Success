@@ -33,7 +33,7 @@ body
 
 nav
 {
-    position: fixed;
+    position: flex;
     width: 100%;
     max-width: var(--max-width);
     margin: auto;
