@@ -7,6 +7,7 @@
     --text-light: #578E87;
     --text-dark: #08392B;
     --white: #ffffff;
+    --off-white: #FAF9F6;
     --max-width: 1200px;
     --header-font: "Playfair Display", serif;
 }
@@ -17,6 +18,8 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
 
 html, body
 {
@@ -219,4 +222,102 @@ a
     color: var(--primary-color);
 }
 
+.about-content h2
+{
+    color: var(--text-dark);
+}
 
+.about-header
+{
+    display: grid;
+    gap: 2rem;
+    text-align: center;
+}
+
+.about-image img
+{
+    max-width: 450px;
+    margin: auto;
+}
+
+.about-content .paragraph
+{
+    margin-block: 2rem;
+    text-align: center;
+}
+
+.about-grid
+{
+    padding-block: 4rem;
+    display: grid;
+    gap: 2rem 1rem;
+    border-bottom: 1px solid var(--text-dark);
+}
+
+.about-card
+{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.about-card span
+{
+    padding: 8px 15px;
+    font-size: 1.75rem;
+    color: var(--text-dark);
+    background-color: var(--primary-color);
+    border-radius: 100%;
+}
+
+.about-card h4
+{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.client-header h2
+{
+    color: var(--text-dark);
+}
+
+.client-header
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.swiper
+{
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.swiper-slide
+{
+    max-width: 500px;
+}
+
+.client-card
+{
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: var(--off-white);
+}
+
+.client-card img
+{
+    max-width: 70px;
+    border-radius: 100%;
+}
+
+.client-card h4
+{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}

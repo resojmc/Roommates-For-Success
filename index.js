@@ -1,3 +1,13 @@
+const swiper = new Swiper(".swiper", 
+{
+  loop: true,
+  slidePerView: "auto",
+  spaceBetween: 30,
+})
+
+
+
+
 const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-id");
 const menuBtnIcon = menuBtn.querySelector("i");
