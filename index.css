@@ -348,3 +348,95 @@ a
 {
     color: var(--text-light);
 }
+
+.footer-container
+{
+    display: grid;
+    gap: 1rem;
+}
+
+.footer-col h5
+{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--header-font);
+    color: var(--text-dark);
+}
+
+.footer-col h4
+{
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.footer-col p
+{
+    margin-bottom: 1rem;
+}
+
+.footer-col form
+{
+    margin-bottom: 2rem;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--text-dark);
+    border-radius: 5px;
+    color: var(--text-dark);
+}
+
+.footer-col input
+{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+}
+
+.footer-col button
+{
+    border: 1px solid var(--text-dark);
+    border-radius: 5px;
+    color: var(--text-dark);
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.footer-socials h4
+{
+    margin-bottom: 5px;
+}
+
+.footer-socials div
+{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-socials a
+{
+    font-size: 1.75rem;
+    color: var(--text-dark);
+}
+
+.footer-socials a:hover
+{
+    color: var(--text-light);
+}
+
+.footer-bar
+{
+    padding: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.footer-container img
+{
+    max-width: 55px;
+}
